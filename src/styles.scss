@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+.udemy-red{
+  background-color: #aa0d0d;
+}
+.component-shopping {
+  margin-top: 150px;
+}
+.gradientButton{
+
+    background: -webkit-linear-gradient(50deg,#45cafc,#303f9f)!important;
+    background: -o-linear-gradient(50deg,#45cafc,#303f9f)!important;
+    background: linear-gradient(50deg,#45cafc,#303f9f)!important;
+    -webkit-border-radius: 10em;
+    border-radius: 10em;
+    -webkit-transition:.5s ease;
+    -o-transition: .5s ease;
+    transition:.5s ease;
+    padding: 1rem 2rem;
+
+}

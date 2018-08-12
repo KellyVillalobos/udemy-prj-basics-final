@@ -1,0 +1,20 @@
+.dropdown .dropdown-menu .dropdown-item:hover{
+  -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,.18),0 4px 15px 0 rgba(0,0,0,.15);
+  background-color: #4285f4;
+  -webkit-border-radius: .125rem;
+  border-radius: .125rem;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
+  color: white;
+  padding: 10px 10px;
+}
+.dropdown .dropdown-menu {
+  padding: 10px;
+}
+
+.dropdown .dropdown-menu .dropdown-item{
+  padding: 10px 10px;
+}
+
