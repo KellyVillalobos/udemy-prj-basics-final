@@ -3,13 +3,13 @@
     <app-shopping-edit></app-shopping-edit>
     <hr>
     <div class="list-group">
-      <a href="#" class="list-group-item active waves-light" mdbWavesEffect>
-        Cras justo odio
+      <a
+        style="cursor: pointer;"
+        class="list-group-item list-group-item-action waves-light" mdbWavesEffect
+        *ngFor="let ingredient of ingredients"
+      >
+        <p>{{ ingredient.name}} ({{ingredient.amount}})</p>
       </a>
-      <a href="#" class="list-group-item list-group-item-action waves-light" mdbWavesEffect>Dapibus ac facilisis in</a>
-      <a href="#" class="list-group-item list-group-item-action waves-light" mdbWavesEffect>Morbi leo risus</a>
-      <a href="#" class="list-group-item list-group-item-action waves-light" mdbWavesEffect>Porta ac consectetur ac</a>
-      <a href="#" class="list-group-item list-group-item-action disabled waves-light" mdbWavesEffect>Vestibulum at eros</a>
     </div>
   </div>
 </div>

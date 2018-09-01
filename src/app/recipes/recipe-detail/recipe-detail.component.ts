@@ -6,13 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recipe-detail.component.scss']
 })
 export class RecipeListDetailComponent implements OnInit {
-show: boolean = false;
+show = false;
+fadeOut = false
+
   constructor() { }
 
   ngOnInit() {
   }
   fadeToggle() {
     this.show = !this.show;
+    this.fadeOut = true;
 
   }
 

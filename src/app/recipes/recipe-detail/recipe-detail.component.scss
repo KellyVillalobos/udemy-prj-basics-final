@@ -12,9 +12,15 @@
 }
 .dropdown .dropdown-menu {
   padding: 10px;
+
 }
 
 .dropdown .dropdown-menu .dropdown-item{
   padding: 10px 10px;
 }
+.fadeIn{
+  transition: visibility;
+  visibility: visible;
+}
+
 

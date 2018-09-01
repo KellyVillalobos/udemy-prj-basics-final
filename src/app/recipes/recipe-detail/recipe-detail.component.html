@@ -10,18 +10,20 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <div [ngClass]="show ? 'dropdown-animating show' : ''" class="dropdown dropdown-animating">
-      <button  (click)="fadeToggle()" [ngClass]="show ? 'active' : ''" type="button" mdbBtn color="primary" class="dropdown-toggle waves-light" mdbWavesEffect>
+    <div [ngClass]="show ? 'dropdown-animating show' : ''" class="dropdown">
+      <button (click)="fadeToggle()" [ngClass]="show ? 'active' : ''" type="button" mdbBtn color="primary"
+              class="dropdown-toggle waves-light" mdbWavesEffect>
         Basic dropdown
       </button>
 
-      <div [ngClass]="show ? 'fadeIn' : 'fadeOut'" class="dropdown-menu dropdown-primary animated mt-1">
-        <a (click)="fadeToggle()" class="dropdown-item" href="#">To Shopping List</a>
-        <a (click)="fadeToggle()" class="dropdown-item" href="#">Edit Recipe</a>
-        <a (click)="fadeToggle()" class="dropdown-item" href="#">Delete Recipe</a>
-        <div class="divider dropdown-divider"></div>
-        <!--<a (click)="fadeToggle()" class="dropdown-item" href="#">Separated link</a>-->
-      </div>
+        <div [ngClass]="{'fadeIn' : show}" class="dropdown-menu dropdown-primary animated mt-1">
+          <a (click)="fadeToggle()" class="dropdown-item" href="#">To Shopping List</a>
+          <a (click)="fadeToggle()" class="dropdown-item" href="#">Edit Recipe</a>
+          <a (click)="fadeToggle()" class="dropdown-item" href="#">Delete Recipe</a>
+          <div class="divider dropdown-divider"></div>
+          <!--<a (click)="fadeToggle()" class="dropdown-item" href="#">Separated link</a>-->
+        </div>
+
     </div>
   </div>
 </div>
