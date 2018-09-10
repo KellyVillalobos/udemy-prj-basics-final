@@ -5,11 +5,11 @@
   </mdb-navbar-brand>
   <links>
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active waves-light" mdbWavesEffect>
-        <a class="nav-link">Recipes<span class="sr-only">(current)</span></a>
+      <li [ngClass]="{'active': recipeClass }" class="nav-item  waves-light" mdbWavesEffect>
+        <a class="nav-link" routerLink="/recipe" routerLinkActive="active" (click)="onSelect('recipe')">Recipes<span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item waves-light" mdbWavesEffect>
-        <a class="nav-link">Shopping List</a>
+      <li  [ngClass]="{'active': shoppingListClass }" class="nav-item  waves-light" mdbWavesEffect>
+        <a class="nav-link" routerLink="/shopping-list" routerLinkActive="active" (click)="onSelect('shopping-list')">Shopping List<span class="sr-only">(current)</span></a>
       </li>
     </ul>
     <ul class="navbar-nav">
