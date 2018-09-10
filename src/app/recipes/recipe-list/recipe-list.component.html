@@ -1,20 +1,23 @@
-<div class="row">
-  <div class="col-xs-12">
-    <button mdbBtn type="button" color="mdb-color" class="waves-light gradientButton" mdbWavesEffect>New Recipe</button>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12 mt-4 mb-4">
-    <div class="list-group">
-      <a href="#" class="list-group-item waves-light clearfix mt-2" *ngFor="let recipe of recipes" mdbWavesEffect>
-        <div class="float-left card-text">
-          <h4>{{recipe.name}}</h4>
-          <p>{{recipe.description}} </p>
-        </div>
-        <img class="food-image card-img-top float-right img-thumbnail" src="{{recipe.imagePath}}" alt="">
-      </a>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <button mdbBtn type="button" color="mdb-color" class="waves-light gradientButton" mdbWavesEffect>New Recipe
+      </button>
     </div>
-    <app-recipe-item></app-recipe-item>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 mt-4 mb-4">
+      <div class="list-group">
+        <a href="#" class="list-group-item waves-light clearfix mt-2" *ngFor="let recipe of recipes" mdbWavesEffect>
+          <div class="float-left card-text">
+            <h4>{{recipe.name}}</h4>
+            <p>{{recipe.description}} </p>
+          </div>
+          <img class="food-image card-img-top float-right img-thumbnail" src="{{recipe.imagePath}}" alt="">
+        </a>
+      </div>
+      <app-recipe-item></app-recipe-item>
+    </div>
   </div>
 </div>
 
