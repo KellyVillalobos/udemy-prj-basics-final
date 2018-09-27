@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Recipe} from '../recipe.model';
 
 @Component({
   selector: 'app-recipe-detail',
@@ -7,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeListDetailComponent implements OnInit {
 show = false;
-fadeOut = false
+fadeOut = false;
+@Input() recipe: Recipe;
 
   constructor() { }
 
