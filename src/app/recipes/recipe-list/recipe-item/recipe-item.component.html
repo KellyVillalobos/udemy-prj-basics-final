@@ -1,1 +1,10 @@
-
+<div class="list-group">
+  <a href="#" class="list-group-item waves-light clearfix mt-2"
+     (click)="onSelected" mdbWavesEffect>
+    <div class="float-left card-text">
+      <h4>{{recipe.name}}</h4>
+      <p>{{recipe.description}} </p>
+    </div>
+    <img class="food-image card-img-top float-right img-thumbnail" src="{{recipe.imagePath}}" alt="">
+  </a>
+</div>
