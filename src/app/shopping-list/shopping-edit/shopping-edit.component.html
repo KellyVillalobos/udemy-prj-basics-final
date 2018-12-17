@@ -11,18 +11,26 @@
           <div class="row">
             <div class="col-sm-5 form-group">
               <!-- Default input name -->
-              <label for="defaultFormCardNameEx" class="grey-text font-weight-light">Name</label>
-              <input type="text" id="defaultFormCardNameEx" class="form-control">
+              <label for="name" class="grey-text font-weight-light">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+              #nameInput>
             </div>
             <div class="col-sm-3 form-group">
-              <!-- Default input email -->
+              <!-- Default input amount-->
               <label for="amount" class="grey-text font-weight-light">Amount</label>
-              <input type="number" id="amount" class="form-control">
+              <input
+                type="number"
+                id="amount"
+                class="form-control"
+              #amountInput>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-12">
-              <button class="btn btn-outline-green" type="submit">Add</button>
+              <button class="btn btn-outline-green" type="submit" (click)="onAddItem()">Add</button>
               <button class="btn btn-outline-red" type="submit">Delete</button>
               <button class="btn btn-outline-indigo" type="submit">Clear</button>
             </div>

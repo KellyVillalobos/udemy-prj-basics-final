@@ -11,6 +11,7 @@ import { RecipeItemComponent } from './recipes/recipe-list/recipe-item/recipe-it
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import {Routes} from '@angular/router';
+import {FormsModule} from '@angular/forms';
 
 const appRoutes: Routes = [
   {
@@ -36,7 +37,8 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    MDBBootstrapModule.forRoot()
+    MDBBootstrapModule.forRoot(),
+    FormsModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
