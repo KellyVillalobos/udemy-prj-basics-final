@@ -9,11 +9,16 @@ import {Recipe} from './recipe.model';
   providers: [RecipeService]
 })
 export class RecipesComponent implements OnInit {
+  // Recipe object
   selectedRecipe: Recipe;
 
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
+    // Here we call to the recipie service to check for
+    // the selected recipe we clicked on and subscribe that
+    // recipes data to the selectedRecipe object instantiated
+    // in this component for display in the html.
     this.recipeService.recipeSelected
     .subscribe(
       (recipe: Recipe) => {
